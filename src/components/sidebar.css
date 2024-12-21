@@ -1,0 +1,136 @@
+.sidebarMain {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 30vh;
+  height: 100vh;
+  background-color: #fff;
+  border-right: 1px solid #a09b9b;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sidebar-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.sidebar-toggle button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.user-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  border: 1px solid #e5e5e5;
+  padding: 0.5rem;
+  border-radius: 1.25rem;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 80%;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.sidebar-menu-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sidebar-nav-item.active,
+.sidebar-nav-item:hover {
+  background-color: #1570ef;
+  color: #f3f4f6;
+}
+.sidebar-footer {
+  padding: 1rem;
+  margin-top: 80%;
+}
+
+.sidebar-footer-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sidebar-footer-item:hover {
+  background-color: #f3f4f6;
+}
+@media (max-width: 768px) {
+  .sidebarMain {
+    width: 100vh;
+    height: auto;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    border-right: none;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+  }
+  .sidebar-header {
+    background-color: rgba(252, 247, 247, 0.998);
+    z-index: 100;
+  }
+  .sidebar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #a09b9b;
+    background-color: rgba(252, 247, 247, 0.998);
+    z-index: 100;
+  }
+  .sidebar.active {
+    display: block;
+    width: 100%;
+  }
+  .sidebar-footer {
+    padding: 1rem;
+    margin-top: 0%;
+  }
+}

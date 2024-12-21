@@ -1,0 +1,264 @@
+.auth-container {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+  height: 100vh; /* Ensure full viewport height for centering */
+  align-items: center; /* Center content vertically */
+}
+
+.auth-left {
+  display: flex;
+  flex: 1;
+  background: white;
+  border-right: 1px solid #ccc;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  width: 55%;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  left: 0%;
+}
+
+.auth-left-logo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  aspect-ratio: 1;
+}
+
+.auth-card {
+  border-radius: 1rem;
+  padding: 1rem;
+  background: white;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 30vh;
+}
+
+.shadow-card {
+  box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.auth-card-header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+  width: 350px;
+}
+
+.auth-card-logo {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.auth-card-title {
+  font-weight: 500;
+}
+
+.auth-stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  z-index: 33;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-value {
+  font-weight: 600;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+}
+
+.auth-chart {
+  border-radius: 1rem;
+  padding: 1rem;
+  background: white;
+  margin-bottom: 1rem;
+  position: absolute;
+  bottom: 22vh;
+  left: 55vh;
+}
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.chart-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-trend {
+  display: flex;
+  align-items: center;
+  color: #1570ef;
+}
+
+.icon-up {
+  width: 1rem;
+}
+
+.chart-duration {
+  font-size: 0.875rem;
+}
+
+.chart-info {
+  padding: 1rem 0;
+}
+
+.chart-title {
+  font-weight: 600;
+}
+
+.chart-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.auth-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 45%;
+  position: absolute;
+  right: 0%;
+}
+
+.auth-form {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 80%;
+}
+
+.auth-form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.auth-brand-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.auth-welcome {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.auth-mode {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+}
+
+.auth-mode-button {
+  text-align: center;
+  white-space: nowrap;
+  display: inline-block;
+  padding: 0.8rem 0 0.8rem 0;
+  border-radius: 0.5rem;
+  font-size: 15px;
+  width: 100%;
+  background-color: #e5e7eb;
+  border: 1px solid #d1d5db;
+  transition: background-color 0.3s ease;
+}
+
+.auth-mode-button.active {
+  background-color: #1570ef;
+  color: white;
+}
+
+.auth-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  height: 40vh;
+}
+
+.auth-signin-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-signin-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: black; /* Set the text color to white */
+  text-decoration: none; /* Remove the underline */
+  background-color: #f3f4f6;
+  transition: background-color 0.3s ease;
+}
+
+.auth-signin-option:hover {
+  background-color: #bbc1c9;
+}
+
+.auth-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.75rem;
+}
+
+.auth-privacy {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column; /* Stack left and right sections vertically */
+    gap: 1rem;
+  }
+
+  .auth-left {
+    display: none; /* Hide left section on small screens */
+  }
+
+  .auth-right {
+    width: 100%; /* Make right section take full width */
+  }
+  .auth-right {
+    position: relative;
+  }
+}
