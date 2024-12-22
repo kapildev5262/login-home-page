@@ -6,6 +6,15 @@
   height: 100%;
 }
 
+.layout-content {
+  min-height: 100vh;
+  width: 100%;
+  padding-left: 30vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
   .layout {
     flex-direction: column;
@@ -15,17 +24,25 @@
     position: absolute;
     min-height: 100vh;
     min-width: 100vh;
+    padding-right: 30px;
+    padding-left: 0;
   }
 }
 
-.layout-content {
-  height: 100vh;
-  width: 100%;
-  box-sizing: border-box;
-  overflow-y: auto;
-}
+@media (max-width: 480px) {
+  .layout {
+    font-size: 36px;
+  }
 
-/* Home Component Styles */
+  .layout * {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+
+  .layout-content {
+    padding: 0;
+  }
+}
 .home-container {
   padding: 20px;
 }

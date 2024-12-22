@@ -35,7 +35,7 @@ const Home = () => {
             <div className="header-top">
               <div>
                 <span className="title">Repositories</span>
-                <span className="subtitle">{`${filterdData.length} total repositories`}</span>
+                <span className="subtitle" style={{}}>{`${filterdData.length} total repositories`}</span>
               </div>
               <div className="buttons-container">
                 <button className="button refresh-button">

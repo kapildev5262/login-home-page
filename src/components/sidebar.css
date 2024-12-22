@@ -4,9 +4,10 @@
   top: 0;
   left: 0;
   width: 30vh;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #fff;
   border-right: 1px solid #a09b9b;
+  position: fixed;
 }
 
 .sidebar-header {
