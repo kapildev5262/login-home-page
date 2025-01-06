@@ -70,7 +70,7 @@ const Login = () => {
             {isSaas ? (
               <div className="auth-signin-options">
                 {["github", "bitbucket", "azure-devops", "gitlab"].map((provider) => (
-                  <a key={provider} href="/home" className="auth-signin-option">
+                  <a key={provider} href="./home" className="auth-signin-option">
                     <img src={`/svg/${provider}.svg`} alt={provider} className="auth-icon" />
                     Sign in with {provider.charAt(0).toUpperCase() + provider.slice(1)}
                   </a>
@@ -78,11 +78,11 @@ const Login = () => {
               </div>
             ) : (
               <div className="auth-signin-options">
-                <a href="/home" className="auth-signin-option">
+                <a href="./home" className="auth-signin-option">
                   <img src="/svg/gitlab.svg" alt="gitlab" className="auth-icon" />
                   Sign in with GitLab
                 </a>
-                <a href="/home" className="auth-signin-option">
+                <a href="./home" className="auth-signin-option">
                   <KeyIcon className="auth-icon" />
                   Sign in with SSO
                 </a>
